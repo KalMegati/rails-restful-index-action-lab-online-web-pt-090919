@@ -164,3 +164,15 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 451ms (Views: 449.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/students" for 73.215.243.202 at 2020-02-02 00:39:03 +0000
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  Rendered students/index.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    1: <% @students.first.to_s %>
+  
+app/views/students/index.erb:1:in `_app_views_students_index_erb__2642104376887908613_70117667888080'
